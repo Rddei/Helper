@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-alexandria: "Alexandria", sans-serif;
+  --font-inter-tight : "Inter Tight", sans-serif;
+
+  --color-sb-yellow: #FFC535;
+  --color-sb-yellow-dark: #FCB017;
+  --color-sb-grey-light: #E8E8E9;
+  --color-sb-grey: #707070;
+  --color-sb-grey-dark : #959292;
+  --color-sb-black: #000000;
+
+  --padding-dekstop : 50px;
+  --padding-mobile : 20px;
+
+}
+
+.bg-about-sandbox{
+  background-image: url('/src/assets/image/bg-section-about-sandbox.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-ready-to-use{
+  background-image: url('/src/assets/image/bg-ready-to-use.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-card-potfolio{
+  width : auto;
+  height: full;
+  object-fit: contain;
+  clip-path: polygon(
+     0% 98.282%,0% 98.282%,0.015% 98.56%,0.057% 98.825%,0.125% 99.071%,0.215% 99.296%,0.327% 99.497%,0.457% 99.668%,0.603% 99.808%,0.763% 99.912%,0.935% 99.978%,1.116% 100%,48.265% 100%,48.265% 100%,48.341% 99.996%,48.417% 99.984%,48.492% 99.964%,48.566% 99.936%,48.638% 99.901%,48.708% 99.858%,48.777% 99.808%,48.843% 99.751%,48.907% 99.687%,48.968% 99.616%,67.694% 76.212%,67.694% 76.212%,68.556% 75.208%,69.457% 74.302%,70.392% 73.494%,71.359% 72.789%,72.354% 72.186%,73.373% 71.689%,74.412% 71.299%,75.469% 71.018%,76.539% 70.847%,77.62% 70.79%,98.884% 70.79%,98.884% 70.79%,99.065% 70.768%,99.237% 70.703%,99.397% 70.599%,99.543% 70.459%,99.673% 70.287%,99.785% 70.087%,99.875% 69.862%,99.943% 69.615%,99.985% 69.351%,100% 69.072%,100% 1.718%,100% 1.718%,99.985% 1.44%,99.943% 1.175%,99.875% 0.929%,99.785% 0.703%,99.673% 0.503%,99.543% 0.332%,99.397% 0.192%,99.237% 0.088%,99.065% 0.022%,98.884% 0%,1.116% 0%,1.116% 0%,0.935% 0.022%,0.763% 0.088%,0.603% 0.192%,0.457% 0.332%,0.327% 0.503%,0.215% 0.703%,0.125% 0.929%,0.057% 1.175%,0.015% 1.44%,0% 1.718%,0% 98.282% 
+  );
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-sb-yellow);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 36px;
+  background-color: var(--color-sb-yellow);
+}
+
+
+.bg-portfolio{
+  background-image: url('/src/assets/image/bg-portfolio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
