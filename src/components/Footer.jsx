@@ -6,8 +6,8 @@ function Footer() {
     <footer className="bg-black w-full  py-32 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]">
       <div className="grid grid-cols-12">
         <div className="col-span-4">
-          <img src={logo} alt="sandbox" className="w-[130px] h-auto" />
-          <p className="text-[var(--color-sb-grey)] text-xs mt-10">Copyright © 2024 PT Wira Global Solusi Tbk. All rights reserved</p>
+          <img src={logo} alt="sandbox" className="w-[110px] h-auto" />
+          <p className="text-[var(--color-sb-grey)] text-xs mt-6">Copyright © 2024 PT Wira Global Solusi Tbk. All rights reserved</p>
         </div>
         <div className="col-span-3">
           <ul className="flex flex-col justify-between h-full">
