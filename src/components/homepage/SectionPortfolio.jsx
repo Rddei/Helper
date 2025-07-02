@@ -30,7 +30,7 @@ const SectionPortfolio = () => {
   }, []);
 
   return (
-    <div className="bg-black relative pb-30">
+    <div className="bg-black relative pb-24">
       <div className="bg-portfolio h-auto text-white py-20">
         {/* Section Title */}
         <div className="text-center flex flex-col items-center mb-20 px-[var(--padding-mobile)] md:px-0">

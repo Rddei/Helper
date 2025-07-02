@@ -14,20 +14,20 @@ export const solusiSandbox = [
   {
     title: "Data",
     slug: "data",
-    description: "Aplikasi kami dirancang untuk meningkatkan efisiensi dan produktivitas dalam setiap aspek operasional Anda.",
+    description: "Data menjadi inti dari setiap keputusan bisnis. Optimalisasi data bisnis untuk membuat keputusan yang lebih tepat.",
     image: solusi2,
 
   },
   {
     title: "Infrastruktur",
     slug: "infrastruktur",
-    description: "Aplikasi kami dirancang untuk meningkatkan efisiensi dan produktivitas dalam setiap aspek operasional Anda.",
+    description: "Infrastruktur yang dirancang berfokus pada scalabilities dan reliabilities untuk memberikan fondasi yang solid bagi bisnis Anda.",
     image: solusi3,
   },
   {
     title: "Solusi",
     slug: "solusi",
-    description: "Aplikasi kami dirancang untuk meningkatkan efisiensi dan produktivitas dalam setiap aspek operasional Anda.",
+    description: "Sandbox memiliki beragam solusi inovatif untuk meningkatkan value bisnis Anda. ",
     image: solusi4,
   },
 ];

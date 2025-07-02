@@ -79,7 +79,7 @@ const SectionSolutionSandbox = () => {
                   <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
                     {product.title}
                   </h3>
-                  <p className="text-sm md:text-base text-white text-opacity-80">
+                  <p className="text-sm md:text-base h-[80px] md:h-[100px] text-white text-opacity-80">
                     {product.description}
                   </p>
                 </div>

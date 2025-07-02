@@ -4,7 +4,7 @@ import Button from '../Button'
 export const SectionContactUs = () => {
 
   return (
-    <div className='bg-[#0D0D0D] w-full h-auto py-20 md:py-30 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
+    <div className='bg-[#0D0D0D] w-full h-auto py-20 md:py-32 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center h-full'>
             <div className='flex flex-col items-start justify-center gap-6 w-full md:w-[80%]'>
                 <p className='font-inter-tight text-lg font-bold text-[var(--color-sb-yellow)]'>Hubungi Kami</p>
