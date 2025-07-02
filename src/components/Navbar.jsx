@@ -18,9 +18,9 @@ function Navbar() {
   }, []);
 
   const menuItems = [
-    { label: "Solusi Produk", href: "#" },
-    { label: "Tentang Sandbox", href: "#fitur" },
-    { label: "Bantuan", href: "#harga" },
+    { label: "Solusi Produk", href: "#solusi-produk" },
+    { label: "Tentang Sandbox", href: "#tentang-sandbox" },
+    { label: "Bantuan", href: "#bantuan" },
   ];
 
   return (

@@ -5,7 +5,6 @@ import Homepage from "./pages/Homepage";
 function App() {
   return (
     <Routes>
-      {/* Semua halaman dibungkus oleh Layout */}
       <Route element={<Layout />}>
         <Route path="/" element={<Homepage />} />
       </Route>
