@@ -11,9 +11,9 @@ const SectionSolutionSandbox = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-black text-white py-24 pl-[var(--padding-mobile)] md:pl-[var(--padding-dekstop)] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div className="bg-black text-white py-12 md:py-24 pl-[var(--padding-mobile)] md:pl-[var(--padding-dekstop)] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       {/* Kiri: Title dan Deskripsi */}
-      <div className="flex flex-col items-start gap-5 w-[70%]">
+      <div className="flex flex-col items-start gap-2 md:gap-5 w-full md:w-[70%]">
         <p className="text-base font-inter-tight text-white">Solusi Sandbox</p>
 
         <h2 className="text-4xl md:text-5xl font-alexandria font-bold leading-tight">
@@ -25,7 +25,7 @@ const SectionSolutionSandbox = () => {
         </p>
 
         {/* Tombol Navigasi di bawah teks */}
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-10 md:mt-6">
           <button className="swiper-prev cursor-pointer w-12 h-12 md:w-14 md:h-14 rounded-full text-white border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
             <ArrowLeft size={20} />
           </button>
@@ -52,7 +52,7 @@ const SectionSolutionSandbox = () => {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          className="w-full"
+          className="w-full overflow-hidden"
         >
           {solusiSandbox.map((product, index) => (
             <SwiperSlide

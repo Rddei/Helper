@@ -33,11 +33,11 @@ const SectionPortfolio = () => {
     <div className="bg-black relative pb-30">
       <div className="bg-portfolio h-auto text-white py-20">
         {/* Section Title */}
-        <div className="text-center flex flex-col items-center mb-20">
+        <div className="text-center flex flex-col items-center mb-20 px-[var(--padding-mobile)] md:px-0">
           <p className="text-sm text-[var(--color-sb-yellow)] font-medium">
             Portfolio
           </p>
-          <p className="text-3xl md:text-6xl w-[50%] font-bold mt-2">
+          <p className="text-4xl md:text-6xl w-full md:w-[50%] font-bold mt-2">
             Mereka yang telah percaya dengan Sandbox
           </p>
         </div>
@@ -62,7 +62,7 @@ const SectionPortfolio = () => {
                   : "scale-[0.9] opacity-100 z-[1]"
               }`}
             >
-              <div className="flex flex-col border h-[250px] w-full md:flex-row items-center rounded-[10px] justify-center p-2 bg-white">
+              <div className="flex flex-col border h-auto md:h-[250px] w-full md:flex-row items-center rounded-[10px] justify-center p-2 bg-white">
                 <img
                   src={product.image}
                   alt={product.title}
@@ -70,7 +70,7 @@ const SectionPortfolio = () => {
                 />
                 <div className="h-full px-4 py-2 md:w-1/2 flex flex-col justify-center">
                   <div className="flex flex-col gap-3">
-                    <p className="text-2xl w-[80%] h-[60px] text-black font-alexandria font-bold leading-tight">
+                    <p className="text-2xl w-full md:w-[80%] h-[60px] text-black font-alexandria font-bold leading-tight">
                       {product.title}
                     </p>
                     <div className="w-[30px] h-[3px] bg-[var(--color-sb-yellow)]" />
