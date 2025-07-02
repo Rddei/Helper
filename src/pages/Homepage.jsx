@@ -3,10 +3,8 @@ import SectionHeader from '../components/homepage/SectionHeader'
 import SectionAboutSandbox from '../components/homepage/SectionAboutSandbox'
 import SectionSolutionSandbox from '../components/homepage/SectionSolutionSandbox'
 import SectionReadyToUse from '../components/homepage/SectionReadyToUse'
-import SectionWhyChoose from '../components/homepage/SectionWhyChoose'
-import SectionPortfolio from '../components/homepage/SectionPortfolio'
-import { SectionContactUs } from '../components/homepage/SectionContactUs'
-// import ParalaxSection from '../components/homepage/ParalaxSection'
+import SectionParallax from '../components/homepage/SectionParallax'
+import SectionContactUs from '../components/homepage/SectionContactUs'
 
 const Homepage = () => {
   return (
@@ -15,10 +13,8 @@ const Homepage = () => {
         <SectionAboutSandbox />
         <SectionSolutionSandbox />
         <SectionReadyToUse />
-        <SectionWhyChoose />
-        <SectionPortfolio />
+        <SectionParallax />
         <SectionContactUs />
-        {/* <ParalaxSection /> */}
     </div>
   )
 }

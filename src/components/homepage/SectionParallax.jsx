@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ParalaxSection = () => {
+const SectionParallax = () => {
   const containerRef = useRef(null);
   const portfolioRef = useRef(null);
 
@@ -33,7 +33,7 @@ const ParalaxSection = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative h-auto pb-10 overflow-hidden">
+    <div ref={containerRef} className="relative h-auto pb-10 overflow-hidden bg-black">
       {/* SectionWhyChoose tetap terlihat & menempel */}
         <div className="sticky top-0 h-screen z-10">
             <SectionWhyChoose />
@@ -50,4 +50,4 @@ const ParalaxSection = () => {
   );
 };
 
-export default ParalaxSection;
+export default SectionParallax;

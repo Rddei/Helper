@@ -30,7 +30,7 @@ const SectionPortfolio = () => {
   }, []);
 
   return (
-    <div className="bg-black relative pb-40">
+    <div className="bg-black relative pb-30">
       <div className="bg-portfolio h-auto text-white py-20">
         {/* Section Title */}
         <div className="text-center flex flex-col items-center mb-20">
@@ -97,7 +97,7 @@ const SectionPortfolio = () => {
 
         {/* Custom Pagination */}
       </div>
-      <div className="absolute bottom-48 left-1/2 -translate-x-1/2 pb-5">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 pb-5">
         <div ref={paginationRef} className="custom-pagination flex z-10"></div>
       </div>
     </div>

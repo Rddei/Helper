@@ -4,7 +4,7 @@ import Button from '../Button'
 export const SectionContactUs = () => {
 
   return (
-    <div className='bg-[#0D0D0D] w-full h-screen px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
+    <div className='bg-[#0D0D0D] w-full h-auto py-30 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center h-full'>
             <div className='flex flex-col items-start justify-center gap-6 w-[80%]'>
                 <p className='font-inter-tight text-lg font-bold text-[var(--color-sb-yellow)]'>Hubungi Kami</p>
@@ -20,7 +20,7 @@ export const SectionContactUs = () => {
                     <input
                     type="text"
                     placeholder="Masukkan nama perusahaan"
-                    className="px-4 text-[#5B5B5B] py-2 border border-[#707070] rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B]"
+                    className="bg-[#070707] px-4 text-[#5B5B5B] py-2 border border-[#707070] rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B]"
                     />
                 </div>
 
@@ -32,7 +32,7 @@ export const SectionContactUs = () => {
                     <input
                     type="email"
                     placeholder="Masukkan email"
-                    className="px-4 text-[#5B5B5B] py-2 border border-[#707070] rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B]"
+                    className="bg-[#070707] px-4 text-[#5B5B5B] py-2 border border-[#707070] rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B]"
                     />
                 </div>
 
@@ -44,7 +44,7 @@ export const SectionContactUs = () => {
                     <textarea
                     placeholder="Tulis pesan atau kebutuhan Anda di sini..."
                     rows={4}
-                    className="px-4 py-2 border border-[#707070] rounded-lg resize-none focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B] text-[#5B5B5B]"
+                    className="bg-[#070707] px-4 py-2 border border-[#707070] rounded-lg resize-none focus:outline-none focus:ring-0 placeholder:text-[#5B5B5B] text-[#5B5B5B]"
                     />
                 </div>
                 <div className='md:col-span-2 flex justify-end'>
@@ -57,3 +57,5 @@ export const SectionContactUs = () => {
     </div>
   )
 }
+
+export default SectionContactUs
