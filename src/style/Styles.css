@@ -65,3 +65,11 @@
   background-repeat: no-repeat;
 
 }
+
+.bg-solution{
+  background-image: url('/src/assets/image/bg-solusi-product.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}

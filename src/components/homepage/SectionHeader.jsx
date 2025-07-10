@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const SectionHeader = () => {
   return (
-    <div className="pt-[100px] md:pt-[150px] h-auto px-[var(--padding-mobile)] md:px-[7%] bg-black pb-10">
+    <div className="md:h-[400px] h-auto pt-[100px] md:pt-0 flex flex-col md:flex-row items-center justify-center gap-10 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] bg-black pb-10">
       {/* Heading */}
       <Motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -11,7 +11,7 @@ const SectionHeader = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <p className="font-alexandria text-[70px] md:text-[84px] leading-[100%] tracking-tight font-bold text-white text-center md:text-left">
+        <p className="font-alexandria text-[70px] md:text-[80px] leading-[100%] tracking-tight font-bold text-white text-center md:text-left">
           Software Company <br />
           Indonesia
         </p>
@@ -23,9 +23,9 @@ const SectionHeader = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
         viewport={{ once: true }}
-        className="w-full md:w-[35%] flex flex-col items-center md:items-start justify-center mt-4 md:mt-[-4.5%] ml-0 md:ml-[50%]"
+        className="w-full md:w-[35%] h-full flex flex-col items-center md:items-start justify-end"
       >
-        <p className="font-inter-tight font-light text-xl md:text-3xl text-white tracking-wide text-center md:text-left">
+        <p className="font-inter-tight font-light  text-xl md:text-2xl text-white tracking-wide text-center md:text-left">
           Solusi Teknologi Integratif untuk Semua Kebutuhan Perusahaan Anda
         </p>
         <Button variant="filled" shape="default" className="mt-4">
