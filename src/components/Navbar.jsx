@@ -77,6 +77,7 @@ function Navbar() {
     },
     { label: "Tentang Sandbox", href: "/tentang-sandbox" },
     { label: "Bantuan", href: "/bantuan" },
+    { label: "Kontak Kami", href: "/kontak-kami" },
   ];
 
   return (
