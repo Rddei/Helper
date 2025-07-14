@@ -5,15 +5,17 @@ import SectionSolutionSandbox from '../components/homepage/SectionSolutionSandbo
 import SectionReadyToUse from '../components/homepage/SectionReadyToUse'
 import SectionParallax from '../components/homepage/SectionParallax'
 import SectionContactUs from '../components/homepage/SectionContactUs'
+import SectionWhyChoose from '../components/homepage/SectionWhyChoose'
+import SectionPortfolio from '../components/homepage/SectionPortfolio'
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='bg-black'>
         <SectionHeader />
         <SectionAboutSandbox />
         <SectionSolutionSandbox />
         <SectionReadyToUse />
-        <SectionParallax />
+        <SectionParallax topSection={<SectionWhyChoose />} bottomSection={<SectionPortfolio />} />
         <SectionContactUs />
     </div>
   )

@@ -1,14 +1,12 @@
 import { useEffect, useRef } from "react";
-import SectionWhyChoose from "./SectionWhyChoose";
-import SectionPortfolio from "./SectionPortfolio";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SectionParallax = () => {
+const SectionParallax = ({ topSection, bottomSection }) => {
   const containerRef = useRef(null);
-  const portfolioRef = useRef(null);
+  const bottomRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -23,28 +21,29 @@ const SectionParallax = () => {
       });
 
       tl.fromTo(
-        portfolioRef.current,
+        bottomRef.current,
         { yPercent: 100 },
         { yPercent: 0, ease: "none" }
       );
     }, containerRef);
 
-    return () => ctx.revert(); // clean up
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div ref={containerRef} className="relative h-auto pb-10 overflow-hidden bg-black">
-      {/* SectionWhyChoose tetap terlihat & menempel */}
-        <div className="sticky top-0 h-auto z-10">
-            <SectionWhyChoose />
-        </div>
+    <div
+      ref={containerRef}
+      className="relative h-auto overflow-hidden bg-black"
+    >
+      {/* Sticky top section */}
+      <div className="sticky top-0 h-screen z-10">{topSection}</div>
 
-      {/* SectionPortfolio bergerak naik seiring scroll */}
+      {/* Scroll-in bottom section */}
       <div
-        ref={portfolioRef}
-        className="absolute top-0 left-0 w-full h-auto z-20"
+        ref={bottomRef}
+        className="absolute top-0 left-0 w-full h-screen z-20"
       >
-        <SectionPortfolio />
+        {bottomSection}
       </div>
     </div>
   );

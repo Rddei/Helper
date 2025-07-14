@@ -71,5 +71,29 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
+
+.bg-about{
+  background-image: url('/src/assets/image/bg-about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.bg-contact-us{
+  background-image: url('/src/assets/image/bg-hubungi-kami.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.bg-kontak-kami{
+  background-image: url('/src/assets/image/bg-kontak-kami.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

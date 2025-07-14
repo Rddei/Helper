@@ -94,7 +94,11 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-6 relative">
           <ul className="flex gap-10 text-white font-inter-tight text-md relative z-50">
             {menuItems.map((item) => {
-              const isActive = location.pathname === item.href;
+              const isActive =
+                item.href === "/solusi-produk"
+                  ? location.pathname.startsWith("/solusi-produk")
+                  : location.pathname === item.href;
+
 
               if (item.megaMenu) {
                 return (

@@ -47,6 +47,7 @@ export const dataSolusi = [
     title: "Aplikasi Recruitment Berbasis AI",
     category: "aplikasi",
     label: "Application",
+    recommended: true,
     image: ImgRectAI1,
     description: 
     `
@@ -81,13 +82,13 @@ export const dataSolusi = [
     fitur: [
       {
         icons : IcFeature1,
-        title: "Tes Digital Berdasarkan Role PosisiTes Digital Berdasarkan Role Posisi",
-        desc: "Kandidat dapat mengikuti tes kompetensi yang dirancang khusus sesuai dengan jabatan yang dilamar, baik untuk posisi teknis, kreatif, maupun manajerial.",
+        title: "Tes Digital Berdasarkan Posisi Jabatan",
+        desc: "Kandidat mengikuti tes kompetensi sesuai jabatan, baik untuk posisi teknis, kreatif, maupun manajerial.",
       },
       {
         icons : IcFeature2,
         title: "Objektivitas dan Akurasi Penilaian",
-        desc: "Penilaian tidak lagi subjektif karena berdasarkan data dan algoritma yang teruji, mengurangi risiko bias dalam keputusan HR.",
+        desc: "Penilaian tidak lagi subjektif karena berdasarkan data dan algoritma yang teruji, mengurangi risiko bias.",
       },
       {
         icons : IcFeature3,
@@ -147,6 +148,7 @@ export const dataSolusi = [
     title: "Aplikasi Monitoring Media Sosial",
     category: "aplikasi",
     label: "Application",
+    recommended: true,
     image: ImgMonitoring1,
     description: 
     `
@@ -254,6 +256,7 @@ export const dataSolusi = [
     title: "AI untuk Manajemen Kontrak",
     category: "aplikasi",
     label: "Application",
+    recommended: true,
     image: ImgContract1,
     description: 
     `
@@ -363,6 +366,7 @@ export const dataSolusi = [
     title: "AI untuk Klaim Asuransi",
     category: "aplikasi",
     label: "Application",
+    recommended: true,
     image: ImgInsurance1,
     description: 
     `
@@ -486,6 +490,7 @@ export const dataSolusi = [
     title: "Solusi Pencarian Cerdas dengan AI",
     category: "solusi",
     label: "Solution",
+    
     image: ImgInsurance1,
     description: 
     `
