@@ -63,7 +63,7 @@ const SectionRecommended = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-black relative pb-24">
+    <div ref={sectionRef} className="bg-black relative pb-14">
       <div className="bg-portfolio text-white py-20">
         {/* Title Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] gap-6">
@@ -127,7 +127,7 @@ const SectionRecommended = () => {
         </Swiper>
 
         {/* Next/Prev Buttons */}
-        <div className="flex justify-center gap-4 mt-10">
+        <div className="flex justify-center gap-4 my-10">
           <button
             onClick={handlePrev}
             className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white text-white flex items-center justify-center hover:bg-white hover:text-black transition"

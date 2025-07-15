@@ -3,8 +3,8 @@ import ImgVisiMisi from '../../assets/image/img-visi-misi.png'
 
 const SectionVisiMisi = () => {
   return (
-    <div className='bg-[#0D0D0D] py-28 h-auto w-full'>
-        <div className='flex flex-col items-center justify-center py-20 gap-10 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
+    <div className='bg-[#141414] py-10 h-auto md:py-28 w-full'>
+        <div className='flex flex-col items-center justify-center gap-10 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]'>
             <p className='font-alexandria text-center md:text-left text-4xl md:text-6xl font-bold text-white '>Visi dan Misi <span className='text-[var(--color-sb-yellow)]'>Sandbox</span></p>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-20 mt-10'>
                 <div className='p-2'>

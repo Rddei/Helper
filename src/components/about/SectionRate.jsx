@@ -35,7 +35,7 @@ const SectionRate = () => {
   return (
     <div
       ref={containerRef}
-      className='py-20 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] bg-black'
+      className='py-10 md:py-20 px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] bg-black'
     >
       <div className='grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0'>
         {dataRate.map((item, idx) => (
@@ -43,8 +43,8 @@ const SectionRate = () => {
             key={idx}
             className='rate-item flex items-center justify-center flex-col text-center'
           >
-            <div className='flex flex-col items-center gap-3'>
-              <p className='text-5xl h-14 text-white font-bold font-alexandria flex items-center justify-center'>
+            <div className='flex flex-col items-center gap-1 md:gap-3'>
+              <p className='text-4xl md:text-5xl h-14 text-white font-bold font-alexandria flex items-center justify-center'>
                 <span
                   className='count-number text-[var(--color-sb-yellow)]'
                   data-value={item.value}
@@ -56,7 +56,7 @@ const SectionRate = () => {
                 )}
                 &nbsp;{item.label}
               </p>
-              <p className='w-[80%] h-20 text-lg text-[var(--color-sb-grey)] font-inter-tight'>
+              <p className='w-[80%] h-20 text-md md:text-lg text-[var(--color-sb-grey)] font-inter-tight'>
                 {item.description}
               </p>
             </div>
