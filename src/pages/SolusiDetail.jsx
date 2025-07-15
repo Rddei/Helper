@@ -92,7 +92,8 @@ export default function SolusiDetail() {
           <div className="h-[500px] rounded-xl mb-10">
             <img
               src={solusi.image}
-              alt=""
+              alt="Sandbox"
+              loading="lazy"
               className="h-full bg-contain rounded-xl w-full"
             />
           </div>

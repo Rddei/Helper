@@ -9,17 +9,19 @@ const CardDark = ({ title, description, icon, hover1, hover2 }) => (
         src={hover1}
         alt=""
         className='absolute -top-[39px] -right-[25px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out delay-0'
+        loading='lazy'
       />
       <img
         src={hover2}
         alt=""
+        loading="lazy"
         className='absolute -top-[39px] -left-[25px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out delay-[200ms]'
       />
     </div>
 
     {/* Icon */}
     <div className='h-[128px] w-full flex items-center justify-center z-10'>
-      <img src={icon} alt={title} className='h-full w-auto' />
+      <img src={icon} alt={title} className='h-full w-auto' loading="lazy" />
     </div>
 
     {/* Content */}

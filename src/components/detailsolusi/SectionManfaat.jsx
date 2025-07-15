@@ -13,7 +13,7 @@ export default function SectionManfaat({ manfaatList, title }) {
             key={idx}
             className="flex flex-row items-center gap-4 py-2 w-full"
           >
-            <img src={item.icons} alt="" className="w-[40px]" />
+            <img src={item.icons} alt="Sandbox" loading="lazy" className="w-[40px]" />
             <div>
               <h3 className="font-bold mb-1 text-white text-xl">{item.title}</h3>
               <p className="text-sm text-[var(--color-sb-grey-dark)]">{item.desc}</p>

@@ -8,7 +8,7 @@ const SectionVisiMisi = () => {
             <p className='font-alexandria text-center md:text-left text-4xl md:text-6xl font-bold text-white '>Visi dan Misi <span className='text-[var(--color-sb-yellow)]'>Sandbox</span></p>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-20 mt-10'>
                 <div className='p-2'>
-                    <img src={ImgVisiMisi} alt="" className='w-full' />
+                    <img src={ImgVisiMisi} alt="Sandbox" loading="lazy" className='w-full' />
                 </div>
                 <div className='flex flex-col items-center justify-center gap-20 p-10'>
                     <div className='flex flex-col gap-4'>

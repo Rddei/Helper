@@ -66,6 +66,7 @@ const SectionPortfolio = () => {
                 <img
                   src={product.image}
                   alt={product.title}
+                  loading="lazy"
                   className="w-full md:w-1/2 h-full border rounded-lg object-cover bg-card-potfolio"
                 />
                 <div className="h-full px-4 py-2 md:w-1/2 flex flex-col justify-center">

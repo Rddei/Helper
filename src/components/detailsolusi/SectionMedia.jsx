@@ -53,6 +53,7 @@ export default function SectionMedia({ media, title, openModal }) {
                 <img
                   src={item.url}
                   alt={`media-${idx}`}
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-xl"
                 />
               ) : (

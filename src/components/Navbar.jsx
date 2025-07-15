@@ -88,7 +88,7 @@ function Navbar() {
       )}
     >
       <div className="mx-auto px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] py-4 flex items-center justify-between">
-        <img src={Logo} className="w-20" alt="Logo Sandbox" />
+        <img src={Logo} className="w-20" alt="Sandbox" loading="lazy" />
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 relative">
@@ -143,7 +143,7 @@ function Navbar() {
                                 }}
                               className="flex items-start gap-4 hover:bg-[#FAFAFA] cursor-pointer rounded-lg p-3 transition text-left w-full"
                             >
-                              <img src={subItem.icon} alt="" className="w-6 h-6 mt-1 object-contain" />
+                              <img src={subItem.icon} alt="Sandbox" className="w-6 h-6 mt-1 object-contain" loading="lazy" />
                               <div>
                                 <div className="font-semibold">{subItem.label}</div>
                                 <p className="text-[12px] text-[var(--color-sb-grey)]">{subItem.description}</p>
@@ -236,7 +236,7 @@ function Navbar() {
                   }}
                   className="flex gap-4 items-start bg-white/10 rounded-lg p-4 text-left"
                 >
-                  <img src={subItem.icon} alt="" className="w-6 h-6 object-contain" />
+                  <img src={subItem.icon} alt="Sandbox" loading="lazy" className="w-6 h-6 object-contain" />
                   <div>
                     <div className="font-semibold">{subItem.label}</div>
                     <p className="text-sm text-gray-300">{subItem.description}</p>

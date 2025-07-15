@@ -46,7 +46,7 @@ export default function SectionFitur({ fiturList, title }) {
           <SwiperSlide key={idx} className="!w-[300px]">
             <div className="bg-[#141414] p-6 rounded-xl w-[300px] h-[350px]">
               <div className="h-[128px] w-full flex items-center justify-center mb-5">
-                <img src={fitur.icons} alt="" className="h-full w-auto" />
+                <img src={fitur.icons} alt="Sandbox" loading="lazy" className="h-full w-auto" />
               </div>
               <p className="font-bold h-[60px] text-lg mb-2">{fitur.title}</p>
               <div className="w-[30px] h-[3px] bg-[var(--color-sb-yellow)] rounded-full my-2"></div>

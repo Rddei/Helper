@@ -99,6 +99,7 @@ const SectionRecommended = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
                   className="w-full md:w-1/2 h-[200px] md:h-full object-cover"
                 />
                 <div className="flex flex-col justify-between p-4 md:w-1/2 h-full">

@@ -12,7 +12,7 @@ export default function SectionIndustri({ industriList, title }) {
       <ul className="">
         {industriList.map((item, idx) => (
           <li key={idx} className="flex items-center gap-4 mb-4 py-2">
-            <img src={IcIndustri} alt="" className="w-[40px]" />
+            <img src={IcIndustri} alt="Sandbox" loading="lazy" className="w-[40px]" />
             <div className="flex flex-col">
               <span className="text-white">{item.title}</span>
               <span className="text-[var(--color-sb-grey-dark)]">{item.desc}</span>

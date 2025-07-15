@@ -210,7 +210,7 @@ const SectionFaq = () => {
           ) : (
             <div className="col-span-full flex flex-col gap-10 items-center justify-center py-[50px]">
               <div className="flex flex-col items-center">
-                <img src={ImgEmptyState1} alt="" className="w-[300px]" />
+                <img src={ImgEmptyState1} alt="Sandbox" className="w-[300px]" loading="lazy" />
                 <div className="text-center mt-7">
                   <p className="text-2xl font-alexandria font-bold">Pertanyaan anda tidak di temukan</p>
                   <p className="text-[var(--color-sb-grey)] text-lg">Kami tidak dapat menemukan solusi apa pun. <br />Coba lagi nanti. Silahkan hubungi admin sandbox.</p>

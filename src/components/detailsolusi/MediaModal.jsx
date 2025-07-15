@@ -50,7 +50,7 @@ export default function MediaModal({
               <SwiperSlide key={idx}>
                 <div className="w-full h-[370px] flex items-center justify-center bg-black rounded-lg overflow-hidden">
                   {item.type === "image" ? (
-                    <img src={item.url} alt="" className="object-contain h-full w-full" />
+                    <img src={item.url} alt="Sandbox" loading="lazy" className="object-contain h-full w-full" />
                   ) : (
                     <iframe src={item.url} title={`video-${idx}`} className="w-full h-full rounded-lg" allowFullScreen />
                   )}
@@ -75,7 +75,7 @@ export default function MediaModal({
               } rounded-lg overflow-hidden`}
             >
               {item.type === "image" ? (
-                <img src={item.url} alt="" className="w-full h-full object-cover" />
+                <img src={item.url} alt="Sandbox" loading="lazy" className="w-full h-full object-cover" />
               ) : (
                 <div className="w-full h-full bg-black text-white flex items-center justify-center text-xs">Video</div>
               )}

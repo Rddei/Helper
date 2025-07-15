@@ -19,7 +19,7 @@ const SectionHeader = () => {
             </div>
        </div>
        <div className='-mt-24'>
-        <img src={ImgSolusi} alt="" />
+        <img src={ImgSolusi} alt="Sandbox" loading="lazy" />
        </div>
     </div>
   )

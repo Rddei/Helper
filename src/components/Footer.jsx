@@ -7,7 +7,7 @@ function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-10 lg:gap-0">
         {/* Logo dan Copyright */}
         <div className="lg:col-span-4 flex flex-col gap-4">
-          <img src={logo} alt="sandbox" className="w-[110px] h-auto" />
+          <img src={logo} alt="sandbox" className="w-[110px] h-auto"  loading="lazy"/>
           <p className="text-[var(--color-sb-grey)] text-xs mt-2 lg:mt-6 leading-relaxed">
             Copyright © 2024 PT Wira Global Solusi Tbk. All rights reserved
           </p>

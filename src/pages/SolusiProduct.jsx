@@ -152,7 +152,7 @@ useEffect(() => {
         ) : (
           <div className="col-span-full flex items-center justify-center py-[150px]">
             <div className="flex flex-col items-center">
-              <img src={ImgEmptyState1} alt="" className="w-[300px]" />
+              <img src={ImgEmptyState1} alt="Sandbox" loading="lazy" className="w-[300px]" />
               <div className="text-center mt-7">
                 <p className="text-2xl font-alexandria font-bold">Solusi tidak di temukan</p>
                 <p className="text-[var(--color-sb-grey)] text-lg">Kami tidak dapat menemukan solusi apa pun. Coba lagi nanti</p>
