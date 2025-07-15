@@ -36,10 +36,26 @@ const SolusiProduk = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isSticky, setIsSticky] = useState(false);
+  const [cardsPerPage, setCardsPerPage] = useState(9);
 
   const gridRef = useRef();
   const sentinelRef = useRef();
-  const cardsPerPage = 9;
+
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setCardsPerPage(6);
+    } else {
+      setCardsPerPage(9);
+    }
+  };
+
+  handleResize(); // inisialisasi sekali saat mount
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
 
   // 3. Membuat daftar kategori secara dinamis dari data API
   const categories = useMemo(() => {
@@ -131,7 +147,7 @@ const SolusiProduk = () => {
         ) : (
           <div className="col-span-full flex items-center justify-center py-[150px]">
             <div className="flex flex-col items-center">
-              <img src={ImgEmptyState1} alt="Solusi tidak ditemukan" className="w-[300px]" />
+              <img src={ImgEmptyState1} alt="Sandbox" loading="lazy" className="w-[300px]" />
               <div className="text-center mt-7">
                 <p className="text-2xl font-alexandria font-bold">Solusi tidak ditemukan</p>
                 <p className="text-[var(--color-sb-grey)] text-lg">Kami tidak dapat menemukan solusi yang cocok. Silakan coba kata kunci atau filter lain.</p>

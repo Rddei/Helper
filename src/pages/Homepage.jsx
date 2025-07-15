@@ -7,6 +7,8 @@ import SectionSolutionSandbox from '../components/homepage/SectionSolutionSandbo
 import SectionReadyToUse from '../components/homepage/SectionReadyToUse';
 import SectionParallax from '../components/homepage/SectionParallax';
 import SectionContactUs from '../components/homepage/SectionContactUs';
+import SectionWhyChoose from '../components/homepage/SectionWhyChoose'
+import SectionPortfolio from '../components/homepage/SectionPortfolio'
 
 const Homepage = () => {
   const location = useLocation();
@@ -24,12 +26,12 @@ const Homepage = () => {
   }, [location]);
 
   return (
-    <div>
+    <div className='bg-black'>
       <SectionHeader />
       <SectionAboutSandbox />
       <SectionSolutionSandbox />
       <SectionReadyToUse />
-      <SectionParallax /> {/* Komponen ini sekarang mandiri */}
+      <SectionParallax topSection={<SectionWhyChoose />} bottomSection={<SectionPortfolio />} /> {/* Komponen ini sekarang mandiri */}
       <div id="kontak-kami" ref={contactRef}>
         <SectionContactUs />
       </div>

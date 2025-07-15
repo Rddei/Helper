@@ -5,7 +5,7 @@ import SolusiProduct from "./pages/SolusiProduct";
 import AboutSandbox from "./pages/AboutSandbox";
 import Help from "./pages/Help";
 import SolusiDetail from "./pages/SolusiDetail";
-import BlogPage from "./pages/Test";
+import KontakKami from "./pages/KontakKami";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
          <Route path="/solusi-produk/:slug" element={<SolusiDetail />} />
         <Route path="/tentang-sandbox" element={<AboutSandbox />} />
         <Route path="/bantuan" element={<Help />} />
+        <Route path="/kontak-kami" element={<KontakKami />} />
       </Route>
     </Routes>
   );

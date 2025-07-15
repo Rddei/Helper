@@ -12,6 +12,7 @@ const SectionCard = ({ solusi }) => {
         <img
           src={solusi.image}
           alt={solusi.title}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#141414]" />

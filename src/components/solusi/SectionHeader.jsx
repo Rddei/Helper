@@ -1,9 +1,10 @@
 import React from 'react'
+import ImgSolusi from '../../assets/image/img-header-solusi-produk.png'
 import Button from '../Button'
 
 const SectionHeader = () => {
   return (
-    <div className="relative w-full h-auto md:aspect-[16/9] bg-solution bg-black flex items-center justify-center px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] py-10 md:py-0">
+    <div className="relative w-full h-auto md:aspect-[16/9] bg-solution bg-black flex flex-col items-center justify-center px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)] py-10 md:py-0">
        <div className='w-full h-full flex flex-col items-center justify-center px-0 md:px-10'>
             <div className='h-full md:h-[90%] w-full grid grid-cols-1 md:grid-cols-2 md:px-[3%]'>
                 <div className='flex flex-col items-center md:items-start justify-center gap-2'>
@@ -19,6 +20,9 @@ const SectionHeader = () => {
                     </div>
                 </div>
             </div>
+       </div>
+       <div className='-mt-24'>
+        <img src={ImgSolusi} alt="Sandbox" loading="lazy" />
        </div>
     </div>
   )
