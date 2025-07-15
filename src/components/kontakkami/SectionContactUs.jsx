@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../Button'
 import ContactUs from '../ContactUs'
 
 const SectionContactUs = () => {
