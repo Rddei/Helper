@@ -166,7 +166,7 @@ const SectionFaq = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex w-full flex-wrap justify-center gap-3 mb-10">
+        <div className="md:static sticky md:top-0 top-18 bg-black py-5 flex w-full flex-nowrap md:flex-wrap whitespace-nowrap overflow-x-scroll md:overflow-x-hidden md:pl-0 pl-[100%] justify-center gap-3 mb-10">
           {tabs.map((tab) => (
             <button
               key={tab}
