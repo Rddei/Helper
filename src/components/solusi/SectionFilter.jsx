@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const SectionFilter = ({ categories, filter, handleFilterChange }) => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-2 mb-6">
+    <div className="flex md:flex-wrap items-center gap-4 md:gap-2 mb-6 overflow-x-auto scrollbar-hide w-full md:w-auto px-2 md:justify-center">
       {categories.map((item) => (
         <button
           key={item}
