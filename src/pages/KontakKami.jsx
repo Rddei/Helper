@@ -8,7 +8,8 @@ const KontakKami = () => {
   return (
     <>
         <SectionHeader />
-        <SectionParallax topSection={<SectionAddress />} bottomSection={<SectionContactUs />} />
+        <SectionAddress />
+        <SectionContactUs />
     </>
   )
 }

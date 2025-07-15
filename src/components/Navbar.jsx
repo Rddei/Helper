@@ -134,7 +134,7 @@ function Navbar() {
                         onMouseLeave={handleMouseLeave}
                       >
                         {item.items.map((subItem) => (
-                          <div className="p-4">
+                          <div key={subItem.label} className="p-4">
                             <button
                               key={subItem.label}
                                 onClick={() => {
@@ -215,7 +215,7 @@ function Navbar() {
 
       {/* Mobile Mega Menu Drawer */}
       {megaOpen && (
-        <div className="fixed inset-0 bg-black text-white z-50 p-6 overflow-y-auto">
+        <div className="fixed inset-0 bg-[#141414] text-white z-50 h-screen p-6 overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-semibold">{megaOpen}</h2>
             <button onClick={() => setMegaOpen(null)} aria-label="Close menu">
@@ -243,13 +243,24 @@ function Navbar() {
                   </div>
                 </button>
               ))}
+              <div className="col-span-2 px-6 py-4 rounded-b-xl flex flex-row items-center justify-between">
+                <div>
+                  <p className="font-alexandria text-sm font-bold">SOLUSI SANDBOX</p>
+                  <p className="font-inter-tight text-[12px]">Eksplorasi Produk Sandbox untuk Meningkatkan Produktivitas Bisnis Anda</p>
+                </div>
+                <div>
+                  <Button variant="filled" shape="default" className="w-fit">
+                    Semua
+                  </Button>
+                </div>
+              </div>
           </div>
         </div>
       )}
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-[var(--padding-dekstop)] pb-4 pt-2 bg-black text-white">
+        <div className="md:hidden px-[var(--padding-dekstop)] pb-4 pt-2 bg-[#141414] text-white">
           <ul className="flex flex-col space-y-3 font-medium">
             {menuItems.map((item) => {
               const isActive = location.pathname === item.href;

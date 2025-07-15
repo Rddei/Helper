@@ -7,10 +7,8 @@ import Button from "../Button";
 import { dataSolusi } from "../../data/DataSolusi";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-// 🔥 Tambahkan ini
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionRecommended = () => {
@@ -22,7 +20,6 @@ const SectionRecommended = () => {
   const sectionRef = useRef(null); // 🔥 Ref untuk animasi parallax
   const recommendedItems = dataSolusi.filter((item) => item.recommended);
 
-  // 🔥 Parallax GSAP effect
   useEffect(() => {
     if (sectionRef.current) {
       gsap.fromTo(

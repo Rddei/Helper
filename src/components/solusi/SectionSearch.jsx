@@ -17,7 +17,7 @@ const SectionSearch = ({ searchTerm, setSearchTerm, setCurrentPage }) => {
           setSearchTerm(e.target.value);
           setCurrentPage(1);
         }}
-        className="w-full md:w-96 px-4 py-2 rounded-md bg-[#1a1a1a] border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        className="w-[100%] md:w-[400px] px-4 py-2 rounded-md bg-[#1a1a1a] border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500"
       />
 
       {/* Icon kanan input */}

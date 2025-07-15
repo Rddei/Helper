@@ -58,7 +58,7 @@ const SectionSolutionSandbox = () => {
             <SwiperSlide
               key={index}
               onClick={() => navigate(`/produk/${product.slug}`)}
-              className="!w-[85%] md:!w-[350px] lg:!w-[320px] transition-transform duration-300 ease-in-out cursor-pointer"
+              className="!w-[88%] md:!w-[350px] lg:!w-[320px] transition-transform duration-300 ease-in-out cursor-pointer"
             >
               <div className="relative w-full h-[500px] overflow-hidden rounded-lg group">
                 <img

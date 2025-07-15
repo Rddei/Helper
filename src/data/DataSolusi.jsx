@@ -134,12 +134,30 @@ export const dataSolusi = [
       },
     ],
     industri: [
-      "Perbankan dan Keuangan",
-      "Retail dan Customer Service",
-      "Teknologi Informasi (IT)",
-      "Manufaktur dan Industri Berat",
-      "Pendidikan dan Pelatihan",
-      "Start-up dan Perusahaan Skala Menengah",
+      {
+        title: "Perbankan dan Keuangan",
+        desc: "Meningkatkan keamanan data, efisiensi transaksi, dan layanan pelanggan dengan solusi teknologi kami."
+      },
+      {
+        title: "Retail dan Customer Service",
+        desc: "Optimalkan pengalaman pelanggan, kelola transaksi dengan cepat, dan tingkatkan kepuasan pembeli."
+      },
+      {
+        title : "Teknologi Informasi (IT)",
+        desc: "Mendukung pengembangan perangkat lunak, pengelolaan infrastruktur, dan integrasi sistem yang handal."
+      },
+      {
+        title: "Manufaktur dan Industri Berat",
+        desc: "Mempermudah pemantauan produksi, manajemen aset, dan otomatisasi proses industri."
+      },
+      {
+        title: "Pendidikan dan Pelatihan",
+        desc: "Meningkatkan pembelajaran interaktif, manajemen kelas, dan akses konten digital yang efektif."
+      },
+      {
+        title: "Start-up dan Perusahaan Skala Menengah",
+        desc: "Memberikan solusi yang fleksibel dan terjangkau untuk mendukung pertumbuhan dan inovasi bisnis."
+      },
     ],
   },
 
@@ -242,12 +260,30 @@ export const dataSolusi = [
       },
     ],
     industri: [
-      "Perusahaan B2B dan B2C",
-      "E-commerce dan Retail",
-      "Media dan Agensi Kreatif",
-      "Pemerintahan dan Lembaga Publik",
-      "Startup dan UKM",
-      "Lembaga Pendidikan dan Riset",
+      {
+        title: "Perusahaan B2B dan B2C",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
+      {
+        title: "E-commerce dan Retail",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
+      {
+        title: "Media dan Agensi Kreatif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
+      {
+        title: "Pemerintahan dan Lembaga Publik",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
+      {
+        title: "Startup dan UKM",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
+      {
+        title: "Lembaga Pendidikan dan Riset",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?",
+      },
     ],
   },
 
