@@ -22,7 +22,7 @@ const SectionPagination = ({ totalPages, currentPage, setCurrentPage }) => {
         onClick={handlePrev}
         disabled={currentPage === 1}
         className={clsx(
-          "flex items-center gap-1 px-3 py-1 text-base font-medium",
+          "flex items-center gap-1 px-3 py-1 text-sm md:text-base font-medium",
           currentPage === 1
             ? "text-[var(--color-sb-grey-dark)]  cursor-not-allowed"
             : "text-white hover:text-[var(--color-sb-yellow)] cursor-pointer"
@@ -53,7 +53,7 @@ const SectionPagination = ({ totalPages, currentPage, setCurrentPage }) => {
         onClick={handleNext}
         disabled={currentPage === totalPages}
         className={clsx(
-          "flex items-center gap-1 px-3 py-1 rounded-md text-base font-medium",
+          "flex items-center gap-1 px-3 py-1 rounded-md text-sm md:text-base font-medium",
           currentPage === totalPages
             ? "text-[var(--color-sb-grey-dark)] cursor-not-allowed"
             : "text-white hover:text-[var(--color-sb-yellow)] cursor-pointer"

@@ -15,17 +15,33 @@ import SectionSearch from "../components/solusi/SectionSearch";
 import SectionHeader from "../components/solusi/SectionHeader";
 import ImgEmptyState1 from "../assets/image/empty-state-1.svg"
 import ContactUs from "../components/ContactUs";
+
 const SolusiProduk = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [filter, setFilter] = useState("semua");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isSticky, setIsSticky] = useState(false);
+  const [cardsPerPage, setCardsPerPage] = useState(9);
 
   const gridRef = useRef();
   const sentinelRef = useRef();
 
-  const cardsPerPage = 9;
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setCardsPerPage(6);
+    } else {
+      setCardsPerPage(9);
+    }
+  };
+
+  handleResize(); // inisialisasi sekali saat mount
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
 
   // Sticky detection
 useEffect(() => {
