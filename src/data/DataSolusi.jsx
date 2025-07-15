@@ -24,9 +24,9 @@ import VidMonitoring1 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sos
 
 // AI Manajemen Contract
 import ImgContract1 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-1.jpg";
-import ImgContract2 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/img-2.jpg";
-import ImgContract3 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/img-3.jpg";
-import ImgContract4 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/img-4.jpg";
+import ImgContract2 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak//Img-2.jpg";
+import ImgContract3 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-3.jpg";
+import ImgContract4 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-4.jpg";
 import VidContract1 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/video-contract-1.mp4";
 
 // Klaim Asuransi
