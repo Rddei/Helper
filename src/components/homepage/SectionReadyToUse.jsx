@@ -5,10 +5,21 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import { readyToUseSolutions } from "../../data/readyToUseSolutions";
+// import { readyToUseSolutions } from "../../data/readyToUseSolutions";
+import useSolusi from "../../hooks/useSolusii";
 
 const SectionReadyToUse = () => {
   const navigate = useNavigate();
+
+  const { solusi, loading, error } = useSolusi();
+
+  if (loading) {
+    return <div className="py-24 text-center text-white bg-black">Memuat Solusi...</div>;
+  }
+
+  if (error) {
+    return <div className="py-24 text-center text-red-500 bg-black">{error}</div>;
+  }
 
   return (
       <div className="relative bg-black bg-ready-to-use bg-cover bg-center bg-no-repeat py-24  overflow-hidden">
@@ -31,52 +42,45 @@ const SectionReadyToUse = () => {
               Temukan Solusi Terbaik untuk Bisnis Anda
             </p>
 
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={{
-                nextEl: ".find-next",
-                prevEl: ".find-prev",
-              }}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
-              slidesPerView={"auto"}
-              spaceBetween={24}
-              className="w-full"
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          navigation={{
+            nextEl: ".find-next",
+            prevEl: ".find-prev",
+          }}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          slidesPerView={"auto"}
+          spaceBetween={24}
+          className="w-full"
+        >
+          {solusi.map((item) => (
+            <SwiperSlide
+              key={item.slug}
+              className="!w-[240px] md:!w-[260px] lg:!w-[340px] cursor-pointer"
+              onClick={() => navigate(`/produk/${item.slug}`)}
             >
-              {readyToUseSolutions.map((item, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="!w-[240px] md:!w-[260px] lg:!w-[340px] cursor-pointer"
-                  onClick={() => navigate(`/produk/${item.slug}`)}
-                >
-                  <div className="relative rounded-md overflow-hidden group">
-                    {/* Gambar */}
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      loading="lazy"
-                      className="w-full h-[400px] object-cover"
-                    />
-
-                    {/* Gradient bawah ke atas */}
-                    <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black via-black/50 to-transparent z-10 pointer-events-none" />
-
-                    {/* Hover full overlay */}
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition duration-300 z-20 pointer-events-none" />
-
-                    {/* Teks */}
-                    <div className="absolute top-0 left-0 w-full p-4 z-30">
-                      <p className="text-sm text-white font-light">Solusi Produk</p>
-                      <h3 className="text-white text-xl w-[50%] font-bold">{item.title}</h3>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+              <div className="relative rounded-md overflow-hidden group">
+                <img
+                  src={item.image || item._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'https://placehold.co/400x240?text=No+Image'}
+                  alt={item.title?.rendered || item.title}
+                  loading="lazy"
+                  className="w-full h-[400px] object-cover"
+                />
+                <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black via-black/50 to-transparent z-10 pointer-events-none" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition duration-300 z-20 pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full p-4 z-30">
+                  <span className="text-sm text-white font-light">Solusi Produk</span>
+                  <h3 className="text-white text-xl w-[50%] font-bold">{item.title?.rendered || item.title}</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
             {/* Navigasi Panah */}
             <div className="flex justify-center gap-4 mt-16">

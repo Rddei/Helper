@@ -16,6 +16,7 @@ function Navbar() {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [leaveTimeout, setLeaveTimeout] = useState(null);
   const [megaOpen, setMegaOpen] = useState(null);
+  const [activeSection, setActiveSection] = useState(null); // Tambah state untuk section aktif
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -23,6 +24,17 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
+      // Highlight menu Kontak Kami jika section kontak-kami sedang di viewport
+      const kontak = document.getElementById('kontak-kami');
+      if (kontak) {
+        const rect = kontak.getBoundingClientRect();
+        const offset = 120; // offset untuk sticky navbar
+        if (rect.top - offset <= 0 && rect.bottom - offset > 0) {
+          setActiveSection('kontak-kami');
+        } else {
+          setActiveSection(null);
+        }
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -77,7 +89,7 @@ function Navbar() {
     },
     { label: "Tentang Sandbox", href: "/tentang-sandbox" },
     { label: "Bantuan", href: "/bantuan" },
-    { label: "Kontak Kami", href: "/kontak-kami" },
+    { label: "Kontak Kami", href: "/#kontak-kami", section: "kontak-kami" },
   ];
 
   return (
@@ -94,7 +106,13 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-6 relative">
           <ul className="flex gap-10 text-white font-inter-tight text-md relative z-50">
             {menuItems.map((item) => {
-              const isActive = location.pathname === item.href;
+              let isActive = false;
+              // Jika sedang di section kontak, hanya Kontak Kami yang menyala
+              if (activeSection === 'kontak-kami') {
+                isActive = item.section === 'kontak-kami';
+              } else {
+                isActive = location.pathname === item.href && !item.section;
+              }
 
               if (item.megaMenu) {
                 return (

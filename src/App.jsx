@@ -5,6 +5,7 @@ import SolusiProduct from "./pages/SolusiProduct";
 import AboutSandbox from "./pages/AboutSandbox";
 import Help from "./pages/Help";
 import SolusiDetail from "./pages/SolusiDetail";
+import BlogPage from "./pages/Test";
 
 function App() {
   return (

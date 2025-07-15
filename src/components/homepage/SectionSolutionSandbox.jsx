@@ -4,11 +4,13 @@ import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { solusiSandbox } from "../../data/SolusiSandbox";
+import useSolusi from "../../hooks/useSolusi";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import parse from "html-react-parser";
 
 const SectionSolutionSandbox = () => {
   const navigate = useNavigate();
+  const { solusi, loading, error } = useSolusi();
 
   return (
     <div className="bg-black text-white py-12 md:py-24 pl-[var(--padding-mobile)] md:pl-[var(--padding-dekstop)] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -54,19 +56,23 @@ const SectionSolutionSandbox = () => {
           }}
           className="w-full overflow-hidden"
         >
-          {solusiSandbox.map((product, index) => (
-            <SwiperSlide
-              key={index}
-              onClick={() => navigate(`/produk/${product.slug}`)}
-              className="!w-[85%] md:!w-[350px] lg:!w-[320px] transition-transform duration-300 ease-in-out cursor-pointer"
-            >
-              <div className="relative w-full h-[500px] overflow-hidden rounded-lg group">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
+          {error && <p className="text-center text-red-500">{error}</p>}
+          {loading ? (
+            <div className="text-center text-white py-20">Memuat data...</div>
+          ) : (
+            solusi.map((product, index) => (
+              <SwiperSlide
+                key={product.id || index}
+                onClick={() => navigate(`/produk/${product.slug}`)}
+                className="!w-[85%] md:!w-[350px] lg:!w-[320px] transition-transform duration-300 ease-in-out cursor-pointer"
+              >
+                <div className="relative w-full h-[500px] overflow-hidden rounded-lg group">
+                  <img
+                    src={product._embedded?.['wp:featuredmedia']?.[0]?.source_url || product.image || 'https://placehold.co/400x240?text=No+Image'}
+                    alt={product.title?.rendered || product.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
 
                 {/* Gradient bawah */}
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
@@ -74,18 +80,19 @@ const SectionSolutionSandbox = () => {
                 {/* Hover full overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition duration-300 z-20" />
 
-                {/* Teks */}
-                <div className="absolute bottom-0 left-0 w-full z-30 p-6">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                    {product.title}
-                  </h3>
-                  <p className="text-sm md:text-base h-[80px] md:h-[100px] text-white text-opacity-80">
-                    {product.description}
-                  </p>
+                  {/* Teks */}
+                  <div className="absolute bottom-0 left-0 w-full z-30 p-6">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                      {product.title?.rendered || product.title}
+                    </h3>
+                    <div className="text-sm md:text-base h-[80px] md:h-[100px] text-white text-opacity-80">
+                      {product.excerpt?.rendered ? parse(product.excerpt.rendered) : product.description}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+              </SwiperSlide>
+            ))
+          )}
         </Swiper>
       </div>
     </div>
