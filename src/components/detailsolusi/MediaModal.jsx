@@ -27,10 +27,10 @@ export default function MediaModal({
         </div>
 
         <div className="relative">
-          <button className="modal-swiper-prev absolute top-1/2 left-0 -translate-y-1/2 z-10 w-10 h-10 rounded-full border text-[var(--color-sb-grey-dark)] hover:bg-black hover:text-[var(--color-sb-yellow)] transition flex items-center justify-center">
+          <button className="modal-swiper-prev absolute top-1/2 left-0 -translate-y-1/2 z-10 w-10 h-10 rounded-full text-[var(--color-sb-grey-dark)] hover:bg-black hover:text-[var(--color-sb-yellow)] transition flex items-center justify-center">
             <ChevronLeft size={20} />
           </button>
-          <button className="modal-swiper-next absolute top-1/2 right-0 -translate-y-1/2 z-10 w-10 h-10 rounded-full border text-[var(--color-sb-grey-dark)] hover:bg-black hover:text-[var(--color-sb-yellow)] transition flex items-center justify-center">
+          <button className="modal-swiper-next absolute top-1/2 right-0 -translate-y-1/2 z-10 w-10 h-10 rounded-full text-[var(--color-sb-grey-dark)] hover:bg-black hover:text-[var(--color-sb-yellow)] transition flex items-center justify-center">
             <ChevronRight size={20} />
           </button>
 

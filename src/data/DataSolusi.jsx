@@ -1,32 +1,35 @@
-// Aplikasi Recruitment Berbasis AI
-import ImgRectAI1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-1.jpg";
-import ImgRectAI2 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-2.jpg";
-import ImgRectAI3 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-3.jpg";
-import ImgRectAI4 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-4.jpg";
-import VidRectAI1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/video-recruitment-1.mp4";
+// Icon Benefit
 import IcBenefit1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-benefit-1.svg";
 import IcBenefit2 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-benefit-2.svg";
 import IcBenefit3 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-benefit-3.svg";
 import IcBenefit4 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-benefit-4.svg";
 import IcBenefit5 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-benefit-5.svg";
+// Icon Feature
 import IcFeature1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-feature-1.svg";
 import IcFeature2 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-feature-2.svg";
 import IcFeature3 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-feature-3.svg";
 import IcFeature4 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-feature-4.svg";
 import IcFeature5 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/ic-feature-5.svg";
 
+// Aplikasi Recruitment Berbasis AI
+import ImgRectAI1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-1.webp";
+import ImgRectAI2 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-2.webp";
+import ImgRectAI3 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-3.webp";
+import ImgRectAI4 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/img-4.webp";
+import VidRectAI1 from "../assets/image/Solusi/Aplikasi/Aplikasi Recruitment Berbasis AI/video-recruitment-1.mp4";
+
 // Aplikasi Monitoring Media Sosial
-import ImgMonitoring1 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-1.jpg";
-import ImgMonitoring2 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-2.jpg";
-import ImgMonitoring3 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-3.jpg";
-import ImgMonitoring4 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-4.jpg";
+import ImgMonitoring1 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-1.webp";
+import ImgMonitoring2 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-2.webp";
+import ImgMonitoring3 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-3.webp";
+import ImgMonitoring4 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/img-4.webp";
 import VidMonitoring1 from "../assets/image/Solusi/Aplikasi/Monitoring Media Sosial/video-monitoring-media-sosial.mp4";
 
 // AI Manajemen Contract
-import ImgContract1 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-1.jpg";
-import ImgContract2 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak//Img-2.jpg";
-import ImgContract3 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-3.jpg";
-import ImgContract4 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-4.jpg";
+import ImgContract1 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-1.webp";
+import ImgContract2 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-2.webp";
+import ImgContract3 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-3.webp";
+import ImgContract4 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-4.webp";
 import VidContract1 from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/video-contract-1.mp4";
 
 // Klaim Asuransi
@@ -35,6 +38,13 @@ import ImgInsurance2 from "../assets/image/Solusi/Aplikasi/Klaim Asuransi/img-2.
 import ImgInsurance3 from "../assets/image/Solusi/Aplikasi/Klaim Asuransi/img-3.jpg";
 import ImgInsurance4 from "../assets/image/Solusi/Aplikasi/Klaim Asuransi/img-4.jpg";
 import VidInsurance1 from "../assets/image/Solusi/Aplikasi/Klaim Asuransi/video-Insurance-1.mp4";
+
+// Aplikasi Manajemen Resiko
+import ImgROM1 from "../assets/image/Solusi/Aplikasi/Aplikasi Manajemen Resiko/img-1.jpg"
+import ImgROM2 from "../assets/image/Solusi/Aplikasi/Aplikasi Manajemen Resiko/img-2.jpg"
+import ImgROM3 from "../assets/image/Solusi/Aplikasi/Aplikasi Manajemen Resiko/img-3.jpg"
+import ImgROM4 from "../assets/image/Solusi/Aplikasi/Aplikasi Manajemen Resiko/img-4.jpg"
+import VidROM1 from "../assets/image/Solusi/Aplikasi/Aplikasi Manajemen Resiko/vid-rom-1.mp4"
 
 
 
@@ -517,6 +527,150 @@ export const dataSolusi = [
       "Asuransi Industri dan Kecelakaan Kerja",
       "Perusahaan Pembiayaan & Fintech yang menawarkan proteksi",
       "Perbankan yang memiliki produk asuransi",
+    ],
+  },
+
+  {
+    slug: "apilikasi-manajemen-resiko",
+    title: "Aplikasi Manajemen Resiko (Risk Overview Management)",
+    category: "aplikasi",
+    label: "Application",
+    recommended: false,
+    image: ImgROM1,
+    description: 
+    `
+      Dalam dunia asuransi yang terus berkembang, kecepatan dan ketepatan dalam memproses klaim menjadi kebutuhan mutlak. Proses klaim tradisional yang selama ini dilakukan secara manual sering kali memakan waktu, rentan terhadap kesalahan manusia, serta membuka celah bagi penipuan. Untuk menjawab tantangan ini, hadir Aplikasi Berbasis Kecerdasan Buatan (AI) untuk Klaim Asuransi, sebuah solusi digital yang dirancang untuk mengotomatisasi dan menyederhanakan proses klaim, mulai dari input data hingga validasi dan keputusan akhir.
+
+      Masalah utama yang sering dihadapi di lapangan adalah lamanya waktu penyelesaian klaim, duplikasi dokumen, kurangnya transparansi proses, serta banyaknya kasus klaim palsu yang merugikan perusahaan asuransi. Dalam skala besar, hal ini tidak hanya memperlambat pelayanan kepada nasabah, tetapi juga meningkatkan beban kerja bagi staf administrasi dan penilai klaim. Selain itu, nasabah pun merasa tidak puas karena harus menunggu terlalu lama tanpa informasi yang jelas tentang status klaim mereka.
+
+      Solusi ini hadir untuk mengatasi persoalan tersebut dengan cara mengintegrasikan teknologi AI ke dalam sistem klaim. Teknologi ini mampu membaca dokumen, mengenali gambar kerusakan kendaraan atau rumah, memverifikasi data dari berbagai sumber, dan memberikan rekomendasi atas klaim yang diajukan. Nasabah cukup mengunggah dokumen atau foto, dan sistem akan memprosesnya secara otomatis dalam hitungan menit. Solusi ini sangat bermanfaat bagi:
+
+      Perusahaan asuransi, yang ingin meningkatkan efisiensi operasional dan mengurangi biaya klaim palsu.
+      Staf internal, yang dapat fokus pada kasus-kasus kompleks, bukan tugas-tugas administratif berulang.
+      Nasabah, yang menginginkan proses klaim yang cepat, transparan, dan mudah dipantau.
+      Mengapa Harus Memilih Solusi AI untuk Klaim Asuransi?
+      Alasan utama memilih solusi ini adalah efisiensi dan akurasi. Sistem ini mampu memproses data klaim dalam jumlah besar secara cepat dan minim kesalahan. Dibandingkan dengan cara manual yang bisa memakan waktu berhari-hari hingga berminggu-minggu, aplikasi AI bisa menyelesaikan klaim hanya dalam hitungan jam, bahkan menit, tergantung kompleksitas kasusnya.
+
+      Selain itu, sistem berbasis AI dapat belajar dari data sebelumnya (machine learning), sehingga semakin sering digunakan, semakin pintar dalam mengenali pola klaim, mendeteksi anomali, serta memberikan rekomendasi keputusan yang lebih baik. Ini berarti perusahaan bisa meminimalisir klaim palsu dan meningkatkan kepuasan pelanggan secara berkelanjutan.
+
+      AI juga memungkinkan integrasi dengan sistem lain, seperti database pelanggan, sistem pembayaran, serta e-KYC, sehingga memperkuat sistem verifikasi identitas dan mempercepat pencairan dana.
+    `,
+    media: [
+      {
+        type: "image",
+        url: ImgROM2,
+      },
+      {
+        type: "image",
+        url: ImgROM3,
+      },
+      {
+        type: "image",
+        url: ImgROM4,
+      },
+      {
+        type: "video",
+        url: VidROM1,
+      },
+    ],
+    fitur: [
+      {
+        icons : IcFeature1,
+        title: "Otomatisasi Pemrosesan Dokumen",
+        desc: "AI dapat membaca dan memahami dokumen seperti formulir klaim, surat keterangan kerusakan, kwitansi, dan dokumen identitas, tanpa perlu input manual.",
+      },
+      {
+        icons : IcFeature2,
+        title: "Pengenalan Gambar (Image Recognition)",
+        desc: "Sistem mampu menganalisis foto kerusakan kendaraan, rumah, atau aset lain untuk memperkirakan tingkat kerusakan dan biaya klaim.",
+      },
+      {
+        icons : IcFeature3,
+        title: "Deteksi Penipuan (Fraud Detection)",
+        desc: "AI memeriksa pola-pola tidak wajar dalam pengajuan klaim berdasarkan data historis dan database internal, untuk mencegah klaim fiktif atau ganda.",
+      },
+      {
+        icons : IcFeature4,
+        title: "Notifikasi Real-Time & Dashboard Pelacakan",
+        desc: "Nasabah dan tim internal bisa memantau status klaim secara real-time melalui dashboard yang interaktif.",
+      },
+      {
+        icons : IcFeature5,
+        title: "Integrasi Data Otomatis",
+        desc: "Terhubung dengan sistem CRM, ERP, dan e-KYC untuk mempercepat validasi data dan proses persetujuan.",
+      },
+      {
+        icons : IcFeature5,
+        title: "Pembelajaran Berbasis Data (Machine Learning)",
+        desc: "Sistem semakin cerdas seiring waktu, memberikan rekomendasi lebih akurat berdasarkan klaim yang telah diproses sebelumnya.",
+      },
+      {
+        icons : IcFeature5,
+        title: "Multi-Platform Access (Web & Mobile)",
+        desc: "Aplikasi dapat diakses oleh nasabah maupun petugas asuransi dari perangkat apa pun, kapan saja.",
+      },
+    ],
+    manfaat: [
+      {
+        icons : IcBenefit1,
+        title: "Kecepatan Proses",
+        desc: "Waktu penyelesaian klaim berkurang dari hari/minggu menjadi jam/menit.",
+      },
+      {
+        icons : IcBenefit2,
+        title: "Pengurangan Biaya Operasional",
+        desc: "Mengurangi ketergantungan pada tenaga manual dan biaya investigasi fraud.",
+      },
+      {
+        icons : IcBenefit3,
+        title: "Akurasi Lebih Tinggi",
+        desc: "Minim kesalahan manusia dalam penilaian klaim dan perhitungan kompensasi.",
+      },
+      {
+        icons : IcBenefit4,
+        title: "Peningkatan Kepuasan Nasabah",
+        desc: "Respon cepat dan transparansi proses meningkatkan loyalitas pelanggan.",
+      },
+      {
+        icons : IcBenefit5,
+        title: "Pencegahan Kecurangan",
+        desc: "Perlindungan finansial perusahaan dari kerugian akibat klaim palsu.",
+      },
+      {
+        icons : IcBenefit5,
+        title: "Skalabilitas",
+        desc: "Solusi dapat menangani peningkatan volume klaim tanpa penambahan sumber daya manusia.",
+      },
+    ],
+    industri: [
+      {
+        title: "Asuransi Kendaraan Bermotor",
+        desc: "Meningkatkan efisiensi dan efektivitas operasional.",
+      },
+      {
+        title: "Asuransi Kesehatan",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
+      {
+        title: "Asuransi Pertanian dan Cuaca",
+        desc: "Meningkatkan pertanian dan pertahanan.",
+      },
+      {
+        title: "Asuransi Properti dan Bencana Alam",
+        desc: "Meningkatkan keamanan dan stabilitas properti.",
+      },
+      {
+        title: "Asuransi Industri dan Kecelakaan Kerja",
+        desc: "Meningkatkan produktivitas dan kesehatan kerja.",
+      },
+      {
+        title: "Perusahaan Pembiayaan & Fintech yang menawarkan proteksi",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
+      {
+        title: "Perbankan yang memiliki produk asuransi",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
     ],
   },
 

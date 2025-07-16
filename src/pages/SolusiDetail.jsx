@@ -9,6 +9,9 @@ import MediaModal from "../components/detailsolusi/MediaModal";
 import SectionFitur from "../components/detailsolusi/SectionFitur";
 import SectionManfaat from "../components/detailsolusi/SectionManfaat";
 import SectionIndustri from "../components/detailsolusi/SectionIndustri";
+import ImgEmptyState1 from "../assets/image/empty-state-1.svg"
+import Button from "../components/Button";
+
 
 
 const menuIndex = [
@@ -62,16 +65,20 @@ export default function SolusiDetail() {
 
   if (!solusi) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-white">
-        <div>
-          <p className="text-xl">Solusi tidak ditemukan</p>
-          <button
+      <div className="min-h-screen flex flex-col bg-[#141414] items-center justify-center text-white">
+          <div className="flex flex-col items-center">
+            <img src={ImgEmptyState1} alt="Sandbox" loading="lazy" className="w-[300px]" />
+            <div className="text-center mt-7">
+              <p className="text-2xl font-alexandria font-bold">Solusi tidak di temukan</p>
+              <p className="text-[var(--color-sb-grey)] text-lg">Kami tidak dapat menemukan solusi apa pun. Coba lagi nanti</p>
+            </div>
+          </div>
+          <Button
             onClick={() => navigate("/solusi-produk")}
-            className="mt-4 underline text-[var(--color-sb-yellow)]"
+            className="mt-10"
           >
             Kembali ke daftar solusi
-          </button>
-        </div>
+          </Button>
       </div>
     );
   }
@@ -89,13 +96,14 @@ export default function SolusiDetail() {
         />
 
         <div className="col-span-9 text-white px-[var(--padding-mobile)] md:px-[var(--padding-dekstop)]">
-          <div className="h-[500px] rounded-xl mb-10">
+          <div className="relative h-[500px] rounded-xl mb-10 overflow-hidden">
             <img
               src={solusi.image}
               alt="Sandbox"
               loading="lazy"
-              className="h-full bg-contain rounded-xl w-full"
+              className="h-full w-full object-cover rounded-xl"
             />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-b from-transparent to-black opacity-100"></div>
           </div>
 
           <SectionOverview
