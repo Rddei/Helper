@@ -10,6 +10,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 
+import NoImage from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-1.webp"
+
 // Aset
 import ImgEmptyState1 from "../assets/image/empty-state-1.svg";
 
