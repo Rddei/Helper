@@ -1,0 +1,41 @@
+/* src/components/Button.module.css */
+
+/* Style dasar untuk semua tombol */
+.button {
+    font-family: 'Inter', sans-serif; /* font-inter-tight */
+    font-weight: 700; /* font-bold */
+    font-size: 1.125rem; /* text-lg */
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* Border transparan agar layout tidak bergeser */
+    cursor: pointer;
+}
+
+/* Styles untuk prop `variant` */
+.filled {
+    background-color: var(--color-sb-yellow);
+    color: black;
+}
+.filled:hover {
+    background-color: var(--color-sb-yellow-dark);
+}
+
+.outline {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+.outline:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styles untuk prop `shape` */
+.default {
+    border-radius: 0.375rem; /* rounded-md */
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+}
+
+.rounded {
+    border-radius: 9999px; /* rounded-full */
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+}

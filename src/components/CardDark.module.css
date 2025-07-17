@@ -1,0 +1,92 @@
+/* Kontainer utama kartu, menggantikan 'group' */
+.cardContainer {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Wrapper untuk efek hover */
+.hoverEffect {
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: all 0.7s ease-out;
+}
+
+/* Ini adalah pengganti dari 'group-hover' */
+.cardContainer:hover .hoverEffect {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gambar untuk efek hover */
+.hoverImage {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+}
+
+.hoverImage1 {
+  top: -39px;
+  right: -25px;
+}
+
+.hoverImage2 {
+  top: -39px;
+  left: -25px;
+  transition-delay: 200ms; /* delay-[200ms] */
+}
+
+/* Gambar akan muncul saat kontainer utama di-hover */
+.cardContainer:hover .hoverImage {
+  opacity: 1;
+}
+
+/* Wrapper untuk Ikon */
+.iconWrapper {
+  height: 128px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.icon {
+  height: 100%;
+  width: auto;
+}
+
+/* Konten Teks */
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: var(--font-alexandria);
+  font-weight: 700;
+  width: 50%;
+}
+
+.divider {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-sb-yellow);
+}
+
+.description {
+  color: var(--color-sb-grey);
+  font-size: 1rem;
+  line-height: 1.25;
+}

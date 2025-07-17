@@ -1,0 +1,27 @@
+.parallaxContainer {
+  position: relative;
+  /* Beri ruang scroll yang cukup agar efeknya berjalan */
+  min-height: 200vh; 
+  height: auto;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.stickyWrapper {
+  /* Bagian ini akan menempel di atas selama scrolling */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.slidingWrapper {
+  /* Bagian ini akan bergerak di atas stickyWrapper */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  /* Transformasi dikontrol oleh state di dalam komponen */
+}

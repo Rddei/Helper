@@ -1,0 +1,142 @@
+/* Container Utama */
+.contactSection {
+  background-color: #0d0d0d;
+  width: 100%;
+  height: auto;
+  padding: 5rem var(--padding-mobile); /* py-20 */
+}
+
+@media (min-width: 768px) {
+  .contactSection {
+    padding: 8rem var(--padding-dekstop); /* md:py-32 */
+  }
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100%;
+  gap: 2.5rem; /* gap-10 */
+}
+
+@media (min-width: 768px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Kolom Kiri: Teks Deskripsi */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem; /* gap-6 */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    width: 80%;
+  }
+}
+
+.subtitle {
+  font-family: var(--font-inter-tight);
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700; /* font-bold */
+  color: var(--color-sb-yellow);
+}
+
+.title {
+  font-family: var(--font-alexandria);
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem; /* md:text-6xl */
+  }
+}
+
+.description {
+  color: var(--color-sb-grey);
+  font-size: 1rem; /* text-base */
+  font-family: var(--font-inter-tight);
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem; /* md:text-lg */
+  }
+}
+
+/* Kolom Kanan: Form */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #fff;
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.formInput, .formTextarea {
+  background-color: #070707;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  color: #5b5b5b;
+  border: 1px solid #707070;
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+  color: #5b5b5b;
+}
+
+.formInput:focus, .formTextarea:focus {
+  outline: none;
+  box-shadow: none; /* focus:ring-0 */
+}
+
+.formTextarea {
+  resize: none;
+}
+
+.fullSpan {
+  grid-column: span 1 / span 1;
+}
+
+@media (min-width: 768px) {
+  .fullSpan {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .buttonContainer {
+    justify-content: flex-end;
+  }
+}

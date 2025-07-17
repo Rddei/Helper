@@ -1,0 +1,69 @@
+.contactWrapper {
+  position: relative;
+  background-color: #000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem; /* gap-2 */
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 0; /* py-24 */
+}
+
+@media (min-width: 768px) {
+  .content {
+    gap: 1rem; /* md:gap-4 */
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 50%;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-family: var(--font-inter-tight);
+  color: var(--color-sb-grey);
+}
+
+.title {
+  font-size: 2.25rem; /* 36px */
+  font-family: var(--font-alexandria);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem; /* 48px */
+  }
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter-tight);
+  line-height: 1.625;
+  margin-top: 0.75rem; /* mt-3 */
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem; /* gap-4 */
+  margin-top: 2.5rem; /* mt-10 */
+}

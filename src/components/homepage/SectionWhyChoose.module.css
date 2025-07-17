@@ -1,0 +1,100 @@
+.whyChooseSection {
+  position: relative;
+  background-color: #000;
+  padding-top: 6rem;    /* py-24 */
+  padding-bottom: 10rem;  /* pb-40 */
+  overflow: hidden;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column; /* Default untuk mobile */
+  justify-content: space-between;
+  margin-bottom: 2rem; /* mb-8 */
+  padding: 0 var(--padding-mobile);
+}
+
+/* Penyesuaian untuk desktop */
+@media (min-width: 768px) {
+  .titleContainer {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 var(--padding-dekstop);
+  }
+}
+
+.titleWrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .titleWrapper {
+    width: 50%;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-family: var(--font-inter-tight);
+  color: var(--color-sb-grey);
+  margin-bottom: 0.75rem; /* mb-3 */
+}
+
+.title {
+  font-size: 2.25rem; /* 36px */
+  font-family: var(--font-alexandria);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem; /* 60px */
+  }
+}
+
+.navigationWrapper {
+  display: flex;
+  gap: 0.5rem; /* gap-2 */
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+.navButton {
+  cursor: pointer;
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  border-radius: 9999px;
+  color: #fff;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.navButton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .navButton {
+    width: 3.5rem; /* w-14 */
+    height: 3.5rem; /* h-14 */
+  }
+}
+
+.swiperContainer {
+  padding-left: var(--padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .swiperContainer {
+    padding-left: var(--padding-dekstop);
+  }
+}
+
+.swiperSlide {
+  width: auto !important;
+}

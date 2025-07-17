@@ -1,0 +1,106 @@
+/* src/components/Footer.module.css */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    padding: 64px 20px; /* py-16 dan padding-mobile */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+    gap: 2.5rem; /* gap-10 */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* gap-4 */
+}
+
+.copyright {
+    color: var(--color-sb-grey);
+    font-size: 0.75rem; /* text-xs */
+    line-height: 1.6; /* leading-relaxed */
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* gap-3 */
+}
+
+.navLinkItem {
+    color: white;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* gap-6 */
+}
+
+.address {
+    color: white;
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.6; /* leading-relaxed */
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* gap-4 */
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+    color: white;
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Aturan untuk layar medium (md) dan large (lg) ke atas */
+@media (min-width: 768px) {
+    .footer {
+        padding: 128px 80px; /* md:py-32 dan padding-dekstop */
+    }
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+    .copyright {
+        margin-top: 1.5rem; /* lg:mt-6 */
+    }
+    .navLinks {
+        gap: 1rem; /* md:gap-4 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr); /* lg:grid-cols-12 */
+        gap: 0;
+    }
+    .logoSection {
+        grid-column: span 4 / span 4;
+    }
+    .navSection {
+        grid-column: span 3 / span 3;
+    }
+    .contactSection {
+        grid-column: span 5 / span 5;
+    }
+}
+
+@media (min-width: 640px) {
+    .contactDetails {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem; /* sm:gap-8 */
+    }
+}

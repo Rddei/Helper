@@ -1,0 +1,84 @@
+/* src/components/homepage/SectionAboutSandbox.module.css */
+.wrapper {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px; /* py-10 dan padding-mobile */
+}
+
+.grid {
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+  gap: 2.5rem; /* gap-10 */
+}
+
+.titleColumn, .descriptionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleColumn {
+  gap: 0.5rem; /* gap-2 */
+}
+
+.descriptionColumn {
+  gap: 1.5rem; /* gap-6 */
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700;
+  color: white;
+}
+
+.title {
+  font-family: 'Alexandria', sans-serif;
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--color-sb-yellow);
+}
+
+.textLarge {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  color: white;
+}
+
+.textNormal {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem; /* text-lg */
+  color: var(--color-sb-grey);
+}
+
+/* Aturan untuk layar medium (md) ke atas */
+@media (min-width: 768px) {
+  .wrapper {
+    aspect-ratio: 16 / 9;
+    padding: 0 80px; /* md:py-0 dan padding-dekstop */
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+  .title {
+    font-size: 4.5rem; /* md:text-7xl */
+  }
+  .textLarge {
+    font-size: 1.5rem; /* md:text-2xl */
+  }
+  .textNormal {
+    font-size: 1.25rem; /* md:text-xl */
+  }
+}

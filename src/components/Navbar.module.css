@@ -1,0 +1,228 @@
+/* src/components/Navbar.module.css */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(24px); /* backdrop-blur-xl */
+}
+
+.navScrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* bg-black/60 */
+}
+
+.navTop {
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem 20px; /* py-4 px-[var(--padding-mobile)] */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px; /* w-20 */
+}
+
+/* === Desktop Menu === */
+.desktopMenu {
+    display: none; /* Default hidden */
+    align-items: center;
+    gap: 1.5rem; /* gap-6 */
+    position: relative;
+}
+
+.menuList {
+    display: flex;
+    gap: 2.5rem; /* gap-10 */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* text-md */
+    position: relative;
+    z-index: 50;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem {
+    position: relative;
+}
+
+.menuButton, .menuLink {
+    transition: all 0.3s ease;
+    padding-bottom: 10px;
+    position: relative;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.menuButton:hover, .menuLink:hover {
+    color: var(--color-sb-yellow);
+}
+
+.menuButton.active, .menuLink.active {
+    color: var(--color-sb-yellow);
+}
+
+.underline {
+    display: block;
+    height: 2px;
+    background-color: var(--color-sb-yellow);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.menuItem:hover .underline, .menuButton.active + .underline, .menuLink.active + .underline {
+    transform: scaleX(1);
+}
+
+.actionButtons {
+    display: none; /* Default hidden */
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+}
+.globeButton {
+    color: white;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.globeButton:hover {
+    color: var(--color-sb-yellow);
+}
+
+/* === Mega Menu Desktop === */
+.megaMenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 1.25rem; /* mt-5 */
+    background-color: white;
+    color: black;
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; /* gap-2 */
+    min-width: 700px;
+    z-index: 40;
+}
+
+.megaMenuItem {
+    padding: 1rem; /* p-4 */
+}
+.megaMenuButton {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem; /* gap-4 */
+    background-color: transparent;
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 0.75rem; /* p-3 */
+    transition: background-color 0.2s;
+    text-align: left;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.megaMenuButton:hover {
+    background-color: #FAFAFA;
+}
+.megaMenuIcon {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+    margin-top: 0.25rem; /* mt-1 */
+    object-fit: contain;
+}
+.megaMenuLabel {
+    font-weight: 600; /* font-semibold */
+}
+.megaMenuDescription {
+    font-size: 12px;
+    color: var(--color-sb-grey);
+}
+.megaMenuFooter {
+    background-color: #FFE8AE;
+    grid-column: span 2 / span 2;
+    padding: 1rem 1.5rem; /* px-6 py-4 */
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.megaMenuFooterTitle {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 700;
+}
+.megaMenuFooterDescription {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+/* === Mobile Menu === */
+.mobileToggleButton {
+    color: white;
+    display: block; /* Default block */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobileMenu {
+    padding: 0.5rem 20px 1rem 20px; /* px-[var(--padding-mobile)] pb-4 pt-2 */
+    background-color: #141414;
+    color: white;
+}
+.mobileMenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500; /* font-medium */
+}
+.mobileMenuButton {
+    display: block;
+    padding: 0.5rem 0; /* py-2 */
+    margin-top: 0.5rem; /* mt-2 */
+    border-bottom: 1px solid #4B5563; /* border-gray-700 */
+    transition: all 0.2s;
+    width: 100%;
+    text-align: left;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.mobileMenuButton.active {
+    color: var(--color-sb-yellow);
+}
+
+/* === Media Queries for Desktop View === */
+@media (min-width: 768px) {
+    .container {
+        padding: 1rem 80px; /* md:px-[var(--padding-dekstop)] */
+    }
+    .desktopMenu, .actionButtons {
+        display: flex; /* Show on desktop */
+    }
+    .mobileToggleButton, .mobileMenu {
+        display: none; /* Hide on desktop */
+    }
+}

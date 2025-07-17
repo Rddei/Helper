@@ -1,95 +1,70 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// src/app/page.js
 
-export default function Home() {
+export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'id-ID': '/',
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
+  },
+  title: "Sandbox - Software Company Indonesia",
+  description: "Solusi teknologi integratif untuk semua kebutuhan perusahaan Anda. Lihat portofolio, produk, dan layanan terbaik dari Sandbox.",
+  keywords: "software, teknologi, solusi, sandbox, indonesia, portofolio, produk",
+  openGraph: {
+    title: "Sandbox - Software Company Indonesia",
+    description: "Solusi teknologi integratif untuk semua kebutuhan perusahaan Anda.",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    siteName: "Sandbox",
+    images: [
+      {
+        url: "/assets/logo-sandbox.svg",
+        width: 800,
+        height: 600,
+        alt: "Sandbox Logo",
+      },
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Open Graph Image",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sandbox - Software Company Indonesia",
+    description: "Solusi teknologi integratif untuk semua kebutuhan perusahaan Anda.",
+    images: ["/assets/logo-sandbox.svg", "/og-image.png"],
+  },
+};
+
+// Impor semua komponen halaman depan Anda
+import SectionHeader from '@/components/homepage/SectionHeader';
+import SectionAboutSandbox from '@/components/homepage/SectionAboutSandbox';
+import SectionSolutionSandbox from '@/components/homepage/SectionSolutionSandbox';
+import SectionReadyToUse from '@/components/homepage/SectionReadyToUse';
+import SectionParallax from '@/components/SectionParallax';
+import SectionContactUs from '@/components/homepage/SectionContactUs';
+import SectionWhyChoose from '@/components/homepage/SectionWhyChoose';
+import SectionPortfolio from '@/components/homepage/SectionPortfolio';
+
+// Komponen Halaman sekarang menjadi sederhana dan tidak mengambil data
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className='bg-black'>
+      <SectionHeader />
+      <SectionAboutSandbox />
+      <SectionSolutionSandbox />  
+      <SectionReadyToUse />
+      <SectionParallax topSection={<SectionWhyChoose />} bottomSection={<SectionPortfolio />} />
+      <div id="kontak-kami">
+        <SectionContactUs />
+      </div>
     </div>
   );
 }
