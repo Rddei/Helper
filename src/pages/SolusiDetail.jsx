@@ -12,6 +12,8 @@ import SectionIndustri from "../components/detailsolusi/SectionIndustri";
 import ImgEmptyState1 from "../assets/image/empty-state-1.svg"
 import Button from "../components/Button";
 
+import NoImage from "../assets/image/Solusi/Aplikasi/AI Manajement Kontrak/Img-1.webp"
+
 
 
 const menuIndex = [

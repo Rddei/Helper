@@ -520,13 +520,34 @@ export const dataSolusi = [
       },
     ],
     industri: [
-      "Asuransi Kendaraan Bermotor",
-      "Asuransi Kesehatan",
-      "Asuransi Pertanian dan Cuaca",
-      "Asuransi Properti dan Bencana Alam",
-      "Asuransi Industri dan Kecelakaan Kerja",
-      "Perusahaan Pembiayaan & Fintech yang menawarkan proteksi",
-      "Perbankan yang memiliki produk asuransi",
+      {
+        title: "Asuransi Kendaraan Bermotor",
+        desc: "Meningkatkan efisiensi dan efektivitas operasional.",
+      },
+      {
+        title: "Asuransi Kesehatan",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
+      {
+        title: "Asuransi Pertanian dan Cuaca",
+        desc: "Meningkatkan pertanian dan pertahanan.",
+      },
+      {
+        title: "Asuransi Properti dan Bencana Alam",
+        desc: "Meningkatkan keamanan dan stabilitas properti.",
+      },
+      {
+        title: "Asuransi Industri dan Kecelakaan Kerja",
+        desc: "Meningkatkan produktivitas dan kesehatan kerja.",
+      },
+      {
+        title: "Perusahaan Pembiayaan & Fintech yang menawarkan proteksi",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
+      {
+        title: "Perbankan yang memiliki produk asuransi",
+        desc: "Meningkatkan kesehatan dan kepuasan pelanggan.",
+      },
     ],
   },
 

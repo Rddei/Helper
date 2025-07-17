@@ -10,7 +10,7 @@ export default function Breadcrumb({ navigate, title }) {
         Homepage
       </button>
       {" "}
-      <ChevronRight size={16} className="inline-block mx-2" />
+      <ChevronRight size={16} className="inline-block" />
       <button
         onClick={() => navigate("/solusi-produk")}
         className="hover:text-[var(--color-sb-yellow)] cursor-pointer text-white"
