@@ -13,7 +13,22 @@ const useSolusi = (params) => {
         setLoading(true);
         // Panggil API untuk mengambil data product dengan _embed
         const response = await getProducts({ ...params, _embed: true });
-        setSolusi(response.data);
+        const formattedData = response.data.map(item => {
+          const cleanDescription = item.excerpt?.rendered
+            ? item.excerpt.rendered.replace(/<p>|<\/p>/g, '').trim()
+            : '';
+          return {
+            id: item.id,
+            slug: item.slug,
+            title: item.title?.rendered || '',
+            description: cleanDescription,
+            content: item.content?.rendered || '',
+            image: item._embedded?.['wp:featuredmedia']?.[0]?.source_url || null,
+            acf: item.acf || {},
+            recommended: item.acf?.recommended || false, // Asumsi nama field di ACF adalah 'recommended' (true/false)
+          };
+        });
+        setSolusi(formattedData);
       } catch (err) {
         setError(err);
         console.error("Gagal mengambil data solusi:", err);

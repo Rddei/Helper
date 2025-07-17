@@ -68,25 +68,25 @@ const SectionSolutionSandbox = () => {
               >
                 <div className="relative w-full h-[500px] overflow-hidden rounded-lg group">
                   <img
-                    src={product._embedded?.['wp:featuredmedia']?.[0]?.source_url || product.image || 'https://placehold.co/400x240?text=No+Image'}
-                    alt={product.title?.rendered || product.title}
+                    src={product.image || 'https://placehold.co/400x240?text=No+Image'}
+                    alt={product.title}
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
 
-                {/* Gradient bawah */}
-                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
+                  {/* Gradient bawah */}
+                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
 
-                {/* Hover full overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition duration-300 z-20" />
+                  {/* Hover full overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition duration-300 z-20" />
 
                   {/* Teks */}
                   <div className="absolute bottom-0 left-0 w-full z-30 p-6">
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                      {product.title?.rendered || product.title}
+                      {product.title}
                     </h3>
                     <div className="text-sm md:text-base h-[80px] md:h-[100px] text-white text-opacity-80">
-                      {product.excerpt?.rendered ? parse(product.excerpt.rendered) : product.description}
+                      {product.description}
                     </div>
                   </div>
                 </div>
